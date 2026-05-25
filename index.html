@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sistema de Pedidos</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>SISTEMA DE PEDIDOS</h1>
+
+<form id="pedidoForm">
+
+<input type="text" id="cliente" placeholder="Nombre del cliente" required>
+
+<select id="producto">
+<option value="Pizza">Pizza - 50 Bs</option>
+<option value="Hamburguesa">Hamburguesa - 35 Bs</option>
+<option value="Refresco">Refresco - 10 Bs</option>
+</select>
+
+<input type="number" id="cantidad" placeholder="Cantidad" min="1" required>
+
+<button type="submit">Enviar Pedido</button>
+
+</form>
+
+<div class="resultado">
+<h2>Total: <span id="total">0</span> Bs</h2>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
